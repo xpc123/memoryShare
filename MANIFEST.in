@@ -1,0 +1,17 @@
+# Include README
+include README.md
+include LICENSE
+include requirements.txt
+
+# Include templates (already in package_data, but ensure they're included)
+recursive-include src/memory_share/templates *
+
+# Exclude unnecessary files
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude .git*
+global-exclude .venv
+global-exclude venv
+global-exclude *.swp
+global-exclude *.swo
+global-exclude *~
